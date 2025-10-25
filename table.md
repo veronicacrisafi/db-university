@@ -26,6 +26,7 @@
 - name
 - last_name
 - course_id (FK)
+- department_id (FK)
 
 ### table: exams_appeals
 
