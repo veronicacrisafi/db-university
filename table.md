@@ -17,6 +17,7 @@
 ### table: courses
 
 - id (PK)
+- department_id (FK)
 - course_name
 
 ### table: teachers
@@ -24,7 +25,7 @@
 - id (PK)
 - name
 - last_name
-- course
+- course_id (FK)
 
 ### table: exams_appeals
 
