@@ -4,6 +4,7 @@
 - departments
 - courses
 - teachers
+- teacher_courses
 - exam_appeals
 - students
 - student_exam_enrollments
@@ -26,14 +27,18 @@
 - id (PK)
 - name
 - last_name
-- course_id (FK)
 - department_id (FK)
 
-### table: exams_appeals
+### table: teacher_courses (pivot table)
 
 - id (PK)
 - teacher_id (FK)
 - course_id (FK)
+
+### table: exams_appeals
+
+- id (PK)
+- teacher_course_id (FK)
 - exam_date
 - exam_time
 - exam_name
@@ -63,7 +68,6 @@
 ### table : votes
 
 - id (PK)
-- student_id (FK)
 - student_exam_enrollment_id (FK)
 - exam_passed (yes/no)
 - exam_vote (number)
