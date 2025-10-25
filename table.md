@@ -61,4 +61,7 @@
 ### table : votes
 
 - id (PK)
-- student_id
+- student_id (FK)
+- student_exam_enrollment_id (FK)
+- exam_passed (yes/no)
+- exam_vote (number)
