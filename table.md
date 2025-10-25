@@ -1,17 +1,18 @@
 ## table: university
 
-- id
+- id (PK)
 - departments
 - courses
 - teachers
 - exam_appeals
 - students
 - student_exam_enrollments
-- vote
+- votes
 
 ### table: departments
 
 - id (PK)
+- university_id (FK)
 - department_name
 
 ### table: courses
