@@ -26,10 +26,15 @@
 - last_name
 - course
 
-### table: exams appleas
+### table: exams_appeals
 
 - id (PK)
--
+- teacher_id (FK)
+- course_id (FK)
+- exam_date
+- exam_time
+- exam_name
+- exam_location
 
 ### table: students
 
