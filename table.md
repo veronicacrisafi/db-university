@@ -1,4 +1,6 @@
-## table: university
+QUESTO NON SERVE
+
+<!-- ## table: university
 
 - id (PK)
 - departments
@@ -8,7 +10,7 @@
 - exam_appeals
 - students
 - student_exam_enrollments
-- votes
+- votes -->
 
 ### table: departments
 
