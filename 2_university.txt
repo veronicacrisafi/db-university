@@ -29,7 +29,7 @@ GROUP BY department_id, degrees.name;
 Joins:
 1.Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
 
-SELECT *
+SELECT students.name, students.surname, students.date_of_birth, students.fiscal_code, students.enrolment_date, students.registration_number, students.email, degrees.name, degrees.level
 FROM `students`
 JOIN `degrees`ON `degrees`.`id`= `students`.`degree_id`
 WHERE `degrees`.`name`= 'Corso di Laurea in Economia'
