@@ -90,7 +90,7 @@ BONUS: Selezionare per ogni studente il numero di tentativi sostenuti
 per ogni esame, stampando anche il voto massimo. Successivamente,
 filtrare i tentativi con voto minimo 18.
 
-SELECT students.name, students.surname, COUNT(*) AS `conteggio`, MAX(vote) AS `voto_massimo`
+SELECT students.name, students.surname,courses.name, COUNT(*) AS `conteggio`, MAX(vote) AS `voto_massimo`
 FROM `exam_student`
 JOIN `students`ON `students`.`id`= `exam_student`.`student_id`
 JOIN `exams`ON `exams`.`id`= `exam_student`.`exam_id`
