@@ -94,5 +94,6 @@ SELECT students.name, students.surname, COUNT(*) AS `conteggio`, MAX(vote) AS `v
 FROM `exam_student`
 JOIN `students`ON `students`.`id`= `exam_student`.`student_id`
 JOIN `exams`ON `exams`.`id`= `exam_student`.`exam_id`
-WHERE `vote`>= 18
-GROUP BY `students`.`id`, `exams`.`id`
+JOIN `courses`ON `courses`.`id`= `exams`.`course_id`
+GROUP BY `students`.`id`, `courses`.`id`
+HAVING MAX(vote) >= 18
